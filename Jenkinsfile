@@ -1,6 +1,6 @@
 node{
          stage('SCM Checkout'){
-           git 'https://github.com/sreekanthm/couponCode.git'
+           git 'https://github.com/sreekanthm/reliable-data.git'
          }
          stage('Mvn Package'){
 	   def mvnHome = tool name: 'maven-3', type: 'maven'
