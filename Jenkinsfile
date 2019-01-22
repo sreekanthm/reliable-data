@@ -8,4 +8,3 @@ node{
 	   sh "${mvnCMD} clean package"
 	}
 }
-
