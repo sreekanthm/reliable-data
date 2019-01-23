@@ -6,7 +6,7 @@ public class NewTest {
  
 public static void main(String[] args) {
  
-System.setProperty("webdriver.chrome.driver", "/home/ec2-user");
+System.setProperty("webdriver.chrome.driver", "/Applications");
  
 // Initialize browser
 WebDriver driver=new ChromeDriver();
