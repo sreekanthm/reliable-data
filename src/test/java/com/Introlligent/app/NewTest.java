@@ -1,31 +1,23 @@
-
-package example;		
-
-import org.openqa.selenium.By;		
-import org.openqa.selenium.WebDriver;		
-import org.openqa.selenium.firefox.FirefoxDriver;		
-import org.testng.Assert;		
-import org.testng.annotations.Test;	
-import org.testng.annotations.BeforeTest;	
-import org.testng.annotations.AfterTest;		
-public class NewTest {		
-	    private WebDriver driver;		
-		@Test				
-		public void testEasy() {	
-			driver.get("http://demo.guru99.com/test/guru99home/");  
-			String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
-		}	
-		@BeforeTest
-		public void beforeTest() {	
-		    System.setProperty("webdriver.chrome.driver", "/home/ec2-user");
+import org.openqa.selenium.WebDriver;
  
-		    // Initialize browser
-		    WebDriver driver=new ChromeDriver();
-
-		}		
-		@AfterTest
-		public void afterTest() {
-			driver.quit();			
-		}		
-}	
+import org.openqa.selenium.chrome.ChromeDriver;
+ 
+public class TestChrome {
+ 
+public static void main(String[] args) {
+ 
+System.setProperty("webdriver.chrome.driver", "path of the exe file\\chromedriver.exe");
+ 
+// Initialize browser
+WebDriver driver=new ChromeDriver();
+ 
+// Open facebook
+driver.get("http://www.facebook.com");
+ 
+// Maximize browser
+ 
+driver.manage().window().maximize();
+ 
+}
+ 
+}
