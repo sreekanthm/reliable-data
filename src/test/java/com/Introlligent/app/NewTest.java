@@ -18,7 +18,11 @@ public class NewTest {
 		}	
 		@BeforeTest
 		public void beforeTest() {	
-		    driver = new FirefoxDriver();  
+		    System.setProperty("webdriver.chrome.driver", "/home/ec2-user");
+ 
+		    // Initialize browser
+		    WebDriver driver=new ChromeDriver();
+
 		}		
 		@AfterTest
 		public void afterTest() {
